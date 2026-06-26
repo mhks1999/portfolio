@@ -1,28 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MuhammadHosseinKoorehsaz | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <nav>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#home" class="logo">MH</a>
+      <nav>
         <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#connect">Contact</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <header class="hero container">
-        <img src="images/profile.jpg" alt="Your Name" class="profile-img">
-        <h1>Hello, I'm [Your Name]</h1>
-        <p class="job-title">Software Developer & Student</p>
-    </header>
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero section">
+      <div class="container hero-content">
+        <h1>MuhammadHossein Koorehsaz</h1>
+        <h2>Back-end Developer</h2>
+        <p>
+          I build backend systems with clean architecture and scalable performance.
+        </p>
+        <a href="#connect" class="btn-outline">Get In Touch</a>
+      </div>
+    </section>
 
-    <button id="scrollToTop">↑</button>
-    <script src="js/script.js"></script>
+    <!-- ABOUT + SKILLS -->
+    <section id="about" class="section about-section">
+      <div class="container about-grid">
+        <div class="about-left">
+          <h2>About Me</h2>
+          <p>
+            I'm a developer focused on building practical digital products with a
+            strong emphasis on performance, usability, and maintainability.
+          </p>
+          <p>
+            My work includes backend systems, Telegram bot development, API design,
+            and modern web applications that solve real workflow problems.
+          </p>
+          <p>
+            I enjoy turning ideas into reliable software with thoughtful structure,
+            clean code, and a minimalist user experience.
+          </p>
+
+          <div class="skills-block">
+            <h3>Currently working with</h3>
+            <div class="skills-tags">
+              <span>Python</span>
+              <span>Django</span>
+              <span>FastAPI</span>
+              <span>PostgreSQL</span>
+              <span>JavaScript</span>
+              <span>Docker</span>
+              <span>Git</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-right">
+          <div class="info-block">
+            <h3>Philosophy</h3>
+            <blockquote>
+              Build simple, useful, and scalable systems that people actually enjoy using.
+            </blockquote>
+          </div>
+
+          <div class="info-block">
+            <h3>What I’m exploring</h3>
+            <ul>
+              <li>Advanced backend architecture</li>
+              <li>Modern frontend patterns</li>
+            </ul>
+          </div>
+
+          <div class="info-block">
+            <h3>Based in</h3>
+            <p>Iran - Ahvaz</p>
+            <p>Available for remote collaboration worldwide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Featured Projects</h2>
+      <p>A selection of systems and tools I've built recently.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-tags"><span>Python</span> <span>FastAPI</span></div>
+          <h3>Automated Trading Engine</h3>
+          <p>High-performance backend for real-time crypto execution with low latency.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-tags"><span>Node.js</span> <span>Aiogram</span></div>
+          <h3>Enterprise Bot Ecosystem</h3>
+          <p>Scalable Telegram infrastructure handling 50k+ daily active users.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="project-tags"><span>React</span> <span>PostgreSQL</span></div>
+          <h3>System Monitor Dashboard</h3>
+          <p>Real-time observability platform for distributed microservices.</p>
+          <a href="#" class="project-link">View Project →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- UPDATED CONTACT SECTION -->
+<section id="connect" class="section connect-section">
+  <div class="container contact-layout">
+    <div class="contact-copy">
+      <h2>Let's Discuss Your System's <span>Future</span></h2>
+      <p>
+        Whether you're looking for an architectural consultant, a lead backend engineer,
+        or just want to discuss distributed systems over coffee, feel free to reach out.
+      </p>
+
+      <div class="contact-info">
+        <!-- Email -->
+        <a href="mailto:mhks1999@gmail.com" class="contact-card contact-card-wide">
+          <div class="contact-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <p class="label">Email</p>
+            <h4>mhks1999@gmail.com</h4>
+          </div>
+        </a>
+
+        <div class="contact-row">
+          <!-- LinkedIn -->
+          <a href="#" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </div>
+            <div>
+              <p class="label">LinkedIn</p>
+              <h4>in/dev-profile</h4>
+            </div>
+          </a>
+
+          <!-- GitHub -->
+          <a href="#" class="contact-card">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </div>
+            <div>
+              <p class="label">GitHub</p>
+              <h4>github/mhks1999</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+      <div class="uptime-badge">Uptime: 99.99%</div>
+      <div class="form-row">
+        <label>
+          <span>Your Name</span>
+          <input type="text" placeholder="John Doe">
+        </label>
+        <label>
+          <span>Your Email</span>
+          <input type="email" placeholder="john@company.com">
+        </label>
+      </div>
+      <label>
+        <span>Subject</span>
+        <input type="text" placeholder="System Design Consultation">
+      </label>
+      <label>
+        <span>Message</span>
+        <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+      </label>
+      <button type="submit" class="send-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="margin-right: 8px; vertical-align: middle;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+
+   
 </body>
 </html>

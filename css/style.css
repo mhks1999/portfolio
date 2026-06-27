@@ -544,8 +544,9 @@ blockquote {
   }
 
   .nav {
-    flex-direction: column;
-    gap: 12px;
+ flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .nav-links {

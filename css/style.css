@@ -590,3 +590,85 @@ blockquote {
     padding: 22px;
   }
 }
+
+.scroll-top {
+
+position: fixed;
+right: 30px;
+bottom: 30px;
+
+width: 45px;
+height: 45px;
+
+border-radius: 50%;
+border: none;
+
+background: #111;
+color: white;
+
+font-size: 20px;
+
+cursor: pointer;
+
+opacity: 0;
+pointer-events: none;
+
+transition: all .3s;
+
+}
+
+.scroll-top.show {
+
+opacity: 1;
+pointer-events: auto;
+
+}
+
+.menu-toggle {
+
+display: none;
+
+font-size: 24px;
+
+background: none;
+border: none;
+cursor: pointer;
+
+color: inherit;
+
+}
+
+@media (max-width: 768px){
+
+.nav-links{
+
+position: absolute;
+
+top: 70px;
+right: 20px;
+
+background: #111;
+
+flex-direction: column;
+
+padding: 20px;
+
+border-radius: 10px;
+
+display: none;
+
+}
+
+.nav-links.open{
+
+display: flex;
+
+}
+
+.menu-toggle{
+
+display: block;
+
+}
+
+}
